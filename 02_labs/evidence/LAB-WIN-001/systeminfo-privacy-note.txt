@@ -1,0 +1,6 @@
+﻿Raw systeminfo.exe output was intentionally not saved by default.
+Reason: it can expose registered owner information, Windows Product ID, local IP addresses,
+VPN interface addresses and other environment details.
+
+If you explicitly need it for a private diagnostic run, rerun this script with:
+  -IncludeRawSystemInfo

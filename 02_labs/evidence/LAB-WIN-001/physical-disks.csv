@@ -1,0 +1,5 @@
+﻿"FriendlyName","MediaType","BusType","SizeGiB","HealthStatus","OperationalStatus","ReliabilityCountersAvailable","TemperatureC","Wear","SerialNumber"
+"ST500LM0 00-SSHD-8GB","Unspecified","USB","465,76","Healthy","OK","True","37","0","[hidden]"
+"Wilk USB 3.2 gen. 1","Unspecified","USB","230,96","Healthy","OK","True",,"0","[hidden]"
+"NVMe KINGSTON SNV2S10","SSD","RAID","931,51","Healthy","OK","True",,"0","[hidden]"
+"SSDSC2KB480G8R","SSD","RAID","447,13","Healthy","OK","True",,"0","[hidden]"

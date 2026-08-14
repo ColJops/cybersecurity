@@ -1,0 +1,5 @@
+﻿"Drive","DriveType","FileSystem","SizeGiB","FreeGiB","FreePercent","PhysicalDisk","BusType","PartitionStyle","EligibleForVmStorage"
+"C:","Fixed","NTFS","930,56","769,61","82,7","NVMe KINGSTON SNV2S10","RAID","GPT","True"
+"D:","Fixed","NTFS","447,12","298,16","66,7","SSDSC2KB480G8R","RAID","GPT","True"
+"E:","Fixed","NTFS","465,76","9,21","2","ST500LM0 00-SSHD-8GB","USB","GPT","False"
+"F:","Removable","exFAT","230,95","230,93","100","Wilk USB 3.2 gen. 1","USB","MBR","False"
