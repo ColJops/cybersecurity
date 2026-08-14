@@ -1,0 +1,51 @@
+# Sekrety i dane lokalne
+private_local/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+*credentials*
+*secret*
+
+# Dane osobowe i surowe eksporty
+**/personal-data/
+**/raw-exports/
+**/memory-dumps/
+**/pcap-private/
+
+# Pliki tymczasowe i kopie edytorów
+~$*.docx
+~$*.xlsx
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/*.log
+
+# Generowane produkty i cache
+build/
+dist/
+.cache/
+__pycache__/
+*.pyc
+
+# Duże obrazy maszyn i zrzuty dysków
+*.vhd
+*.vhdx
+*.vmdk
+*.ova
+*.iso
+*.img
+*.dd
+*.raw
+*.dmp
