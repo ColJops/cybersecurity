@@ -1,0 +1,13 @@
+﻿"File","VhdFormat","VhdType","LogicalGiB","FileMiB","ParentFile","ParentExists"
+"Base-Parent.vhdx","VHDX","Dynamic","2","4","",
+"Child-Differencing.vhdx","VHDX","Differencing","2","4","Base-Parent.vhdx","True"
+"Dynamic-Test.vhdx","VHDX","Dynamic","1","4","",
+"Fixed-Test.vhdx","VHDX","Fixed","1","1028","",
+"LAB-AUTO-001.vhdx","VHDX","Dynamic","2","4","",
+"LAB-CLONE-A.vhdx","VHDX","Differencing","2","4","LAB-CLONE-BASE.vhdx","True"
+"LAB-CLONE-B.vhdx","VHDX","Differencing","2","4","LAB-CLONE-BASE.vhdx","True"
+"LAB-CLONE-BASE.vhdx","VHDX","Dynamic","2","4","",
+"LAB-EXP-001.vhdx","VHDX","Dynamic","0,5","4","",
+"LAB-EXP-001.vhdx","VHDX","Dynamic","0,5","4","",
+"Legacy-Dynamic.vhd","VHD","Dynamic","2","0,01","",
+"Modern-Dynamic.vhdx","VHDX","Dynamic","2","4","",

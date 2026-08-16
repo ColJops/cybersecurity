@@ -1,0 +1,3 @@
+﻿"Name","DisplayName","Status","StartType"
+"vmcompute","Usługa obliczeniowa hosta funkcji Hyper-V","Running","Manual"
+"vmms","Zarządzanie maszynami wirtualnymi funkcji Hyper-V","Running","Automatic"

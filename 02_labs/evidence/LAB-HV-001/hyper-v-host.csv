@@ -1,0 +1,2 @@
+﻿"Name","LogicalProcessorCount","VirtualMachinePath","VirtualHardDiskPath","EnableEnhancedSessionMode","NumaSpanningEnabled","MaximumVirtualMachineMigrations","MaximumStorageMigrations"
+"ACER","12","D:\Hyper-V\Virtual Machines","D:\Hyper-V\Virtual Hard Disks","True","True","2","2"

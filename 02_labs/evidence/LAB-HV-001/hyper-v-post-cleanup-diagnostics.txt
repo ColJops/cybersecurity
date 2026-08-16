@@ -1,0 +1,352 @@
+﻿
+========================================
+ HYPER-V FINAL DIAGNOSTICS
+========================================
+
+=== 1. HYPER-V FEATURES ===
+
+FeatureName                               State
+-----------                               -----
+Microsoft-Hyper-V                       Enabled
+Microsoft-Hyper-V-All                   Enabled
+Microsoft-Hyper-V-Hypervisor            Enabled
+Microsoft-Hyper-V-Management-Clients    Enabled
+Microsoft-Hyper-V-Management-PowerShell Enabled
+Microsoft-Hyper-V-Services              Enabled
+Microsoft-Hyper-V-Tools-All             Enabled
+
+
+
+=== 2. CORE SERVICES ===
+
+Name      DisplayName                                        Status StartType
+----      -----------                                        ------ ---------
+vmcompute Usługa obliczeniowa hosta funkcji Hyper-V         Running    Manual
+vmms      Zarządzanie maszynami wirtualnymi funkcji Hyper-V Running Automatic
+
+
+
+=== 3. POWERSHELL MODULE ===
+
+
+Name    : Hyper-V
+Version : 2.0.0.0
+Path    : C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Hyper-V\2.0.0.0\Hyper-V.psd1
+
+
+
+
+=== 4. HOST CONFIGURATION ===
+
+
+Name                      : ACER
+LogicalProcessorCount     : 12
+VirtualMachinePath        : D:\Hyper-V\Virtual Machines
+VirtualHardDiskPath       : D:\Hyper-V\Virtual Hard Disks
+EnableEnhancedSessionMode : True
+NumaSpanningEnabled       : True
+
+
+
+
+=== 5. VM CONFIGURATION VERSIONS ===
+
+Default:
+
+Name                          Version IsDefault
+----                          ------- ---------
+Microsoft Windows Server 2025 12.0    True     
+
+
+
+All supported:
+
+Name                                                                  Version IsDefault
+----                                                                  ------- ---------
+Rocznicowa aktualizacja systemu Microsoft Windows 10/Server 2016      8.0     False    
+Aktualizacja systemu Microsoft Windows 10 dla twórców                 8.1     False    
+Microsoft Windows 10 Fall Creators Update/Server 1709                 8.2     False    
+Microsoft Windows 10 z aktualizacją z kwietnia 2018 / Server 1803     8.3     False    
+Microsoft Windows 10 z aktualizacją z października 2018 / Server 2019 9.0     False    
+Microsoft Windows 10 z aktualizacją z maja 2019 / Server 1903         9.1     False    
+Microsoft Windows 10 z aktualizacją z maja 2020 / Server 2004         9.2     False    
+Microsoft Windows 10 (Mangan)                                         9.3     False    
+Microsoft Windows Server 2022                                         10.0    False    
+System operacyjny hosta firmy Microsoft (Cobalt+)                     10.5    False    
+Microsoft Windows 11 (22H2)                                           11.0    False    
+Microsoft Windows 11 (Copper)                                         11.1    False    
+Microsoft Windows 11 (Zinc)                                           11.2    False    
+Microsoft Windows Server 2025                                         12.0    True     
+
+
+
+=== 6. VIRTUAL SWITCHES ===
+
+Name           SwitchType NetAdapterInterfaceDescription
+----           ---------- ------------------------------
+Default Switch   Internal                               
+
+
+
+=== 7. VIRTUAL MACHINES ===
+
+=== 8. VM SECURITY ===
+
+=== 9. VM NETWORK ADAPTERS ===
+
+=== 10. ATTACHED VIRTUAL DISKS ===
+
+=== 11. ALL VHD/VHDX CHAINS ===
+
+=== 12. HYPER-V EVENT LOGS ===
+
+TimeCreated         LogName                                         Id Level       Message                             
+-----------         -------                                         -- -----       -------                             
+16.08.2026 18:11:14 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 18:10:13 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 18:09:12 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 18:08:11 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 18:07:06 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 18:06:05 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 18:05:00 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 18:03:58 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 18:02:55 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 18:01:53 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 18:00:31 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:59:24 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:58:16 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:57:15 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:56:11 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:55:08 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:54:04 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:53:01 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:51:52 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:50:51 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:49:50 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:48:46 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:47:37 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:46:36 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:45:34 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:44:34 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:43:34 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:42:24 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:41:20 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+16.08.2026 17:40:16 Microsoft-Windows-Hyper-V-VmSwitch-Operational 285 Ostrzeżenia V-Switch operation OID_GEN_STATISTIC
+                                                                                   S (131334) took too long to complete
+                                                                                   . Operation Type: OID HOST VNIC. Exe
+                                                                                   cution time 0 ms. Queued time 0 ms. 
+                                                                                   Expected execution time less than 0 
+                                                                                   ms. NicName: C08CB7B8-9B3C-408E-8E30
+                                                                                   -5E16A3AEB445. NicFriendlyName: Defa
+                                                                                   ult Switch.                         
+
+
+
+=== 13. QUICK HEALTH CHECK ===
+
+[PASS] Hyper-V basic health check passed.
+
+=== END OF DIAGNOSTICS ===
