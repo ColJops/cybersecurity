@@ -120,3 +120,42 @@ A separate migration experiment will be used before moving this VM.
 LAB-VBX-002 successfully established the first Linux VirtualBox guest
 and validated VirtualBox snapshots, Guest Additions and host-guest
 integration controls.
+
+## Additional storage migration experiment
+
+LAB-VBOX-LINUX-001 was migrated from SSD D: to the new internal
+7200 RPM HDD E: using VBoxManage movevm.
+
+The following items were preserved:
+
+- VM UUID;
+- full snapshot hierarchy;
+- base VDI;
+- differencing VDI chain;
+- EFI/NVRAM state;
+- VirtualBox Guest Additions;
+- NAT networking.
+
+The guest successfully booted and operated from E:.
+
+The VM was then migrated back to SSD D:.
+
+### Performance comparison
+
+| Test | E: HDD | D: SSD |
+| --- | ---: | ---: |
+| Average boot | 18.019 s | 9.512 s |
+| Sequential read | 183 MiB/s | 271 MiB/s |
+| Sequential write | 105 MiB/s | 170 MiB/s |
+| Random 4K read QD1 | 127 IOPS | 1870 IOPS |
+| Random 4K write QD1 | 288 IOPS | 2388 IOPS |
+
+The benchmark confirmed that SSD D: should remain the preferred
+location for active VMs.
+
+HDD E: is assigned primarily to capacity-oriented virtualization
+storage such as ISO, OVA/OVF, exports, archives and less demanding
+guests.
+
+After testing, S03-IntegrationValidated was restored and the guest
+returned to its clean validated baseline.

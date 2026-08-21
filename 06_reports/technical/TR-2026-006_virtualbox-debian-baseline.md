@@ -149,3 +149,48 @@ The final configuration returns optional host-guest data exchange
 channels to the disabled state.
 
 LAB-VBX-002 is ready for closure.
+
+## 13. Storage migration and SSD/HDD benchmark
+
+A controlled live-storage experiment was performed after the primary
+LAB-VBX-002 validation.
+
+The same VM and snapshot chain were moved:
+
+D: SSD -> E: HDD -> D: SSD
+
+using VBoxManage movevm.
+
+The VM UUID, snapshot UUIDs and VDI parent-child chain were preserved.
+
+### Measured results
+
+| Metric | E: HDD | D: SSD | Difference |
+| --- | ---: | ---: | ---: |
+| Average boot | 18.019 s | 9.512 s | 1.89x faster on SSD |
+| Sequential read | 183 MiB/s | 271 MiB/s | 1.48x |
+| Sequential write | 105 MiB/s | 170 MiB/s | 1.62x |
+| Random 4K read QD1 | 127 IOPS | 1870 IOPS | 14.72x |
+| Random 4K write QD1 | 288 IOPS | 2388 IOPS | 8.29x |
+
+The largest advantage of SSD is visible in random 4K I/O rather than
+sequential transfer.
+
+This measurement supports a tiered storage architecture:
+
+- D: SSD for active and I/O-sensitive VMs;
+- E: HDD for capacity-oriented virtualization data and less demanding
+  guests.
+
+The VM was finally returned to D: SSD and snapshot
+S03-IntegrationValidated was restored.
+
+## 14. Final storage state
+
+LAB-VBOX-LINUX-001:
+
+D:\VirtualBox\Virtual Machines\LAB-VBOX-LINUX-001
+
+Result:
+
+**PASS**
