@@ -1,0 +1,1259 @@
+Return-Path: <ian.stanley@stu.spencer.kyschools.us>
+Delivered-To: <jops24@o2.pl>
+X-WP-SR: 6OsXROLnHvzhUUum6hsY57cWii3JjYLzoni4V/6O66YY1zn4F8cZY0hqqw==
+Received: (wp-smtpd mx.tlen.pl 10336 invoked from network); 16 Sep 2026 23:11:32 +0200
+Received: from CH5PR02CU005.outbound.protection.outlook.com (mail-northcentralusazon11022131.outbound.protection.outlook.com [40.107.200.131])
+          (envelope-sender <ian.stanley@stu.spencer.kyschools.us>)
+          by mx.tlen.pl (WP-SMTPD) with TLS_AES_256_GCM_SHA384 encrypted SMTP
+          for <jops24@o2.pl>; 16 Sep 2026 23:11:32 +0200
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=yN2pD/ECqQAfr3vvsW1TfAZi05+jQQxak1SSxiTjujU2Lk1Xo3moZ69Qsm1f54p2FsOj2I6mgxszvDosGlgu1M/peXl5EiC3It59+pN8n71AukkuKgeKtnq3paOCbCSrjAm/o/VzOepnZBCx6sS781NzPAF2kwv2TJS88vIhav27vw7OLaoWSHl3fg3KSMJJD5f7HhcYOuqIw+zoV9hBujU18t2n1Ea7Lh/EC2wuYbpnej+MeY0CMjPNJOuNxale05VfA8QE/g3UAqYNJ7VgifSGgHiJ62UOLdxYbAMOqN5kNOe77p81dNf3HwNfVYKJ9rnPYQioN9+/+wqeAtwvHg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=mTgqNbo5rkxwbn2e5Oz7nOAEjufcEBze1DbUhJtU2NA=;
+ b=KNf2Ba0UQjyBSCcCPr4LiLvz+smo8jbX36PdRiCOHqH+ODa0VAB1ktKei45VptStoKo0Kf5d9b7Yfki2A8LK+l5lpTkQSdFEHqW2b0ip92gGedacMtD2hUbD5L3XixCLiUzQcohYVrTX9SLXjGqAVkJZ/HjlI78kMDSgRhHwkFcUwWJ16athht1By7hgSQIws1BYkcKn9gU3hS4gESkuUmn/EdlvmFb2UFsLoxGAqqHWk9qZW9wofORJxjMH0dJA0tC+p2pSTNmjorzv98hIIYyZ4E6ELhWq4eBOP5E10TIv9RFF+b9dmLKGKHSNVZhhiY4SD2i26NWpvfD0tBFhBA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=stu.spencer.kyschools.us; dmarc=pass action=none
+ header.from=stu.spencer.kyschools.us; dkim=pass
+ header.d=stu.spencer.kyschools.us; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=stu.spencer.kyschools.us; s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=mTgqNbo5rkxwbn2e5Oz7nOAEjufcEBze1DbUhJtU2NA=;
+ b=PYpsXd17psW4sGvLRkjqJFKzW1CjGkvkSjhtBgnFxm1CRkn+U7tpWcc6H9+85kBiEIiHIAO1XWlwqw0iszJtKIyuKBMF8lycoRE+iuyvFmwOqlI0O8A+2mJXlffeEfif9PL4OUzfqxMSJIDlC03GGDK0RzSgtEOIkfr/C4/NnQA=
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=stu.spencer.kyschools.us;
+Received: from MW3PR16MB3882.namprd16.prod.outlook.com (2603:10b6:303:4b::19)
+ by IA3PR16MB6726.namprd16.prod.outlook.com (2603:10b6:208:51f::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.406.12; Wed, 16 Sep
+ 2026 21:11:21 +0000
+Received: from MW3PR16MB3882.namprd16.prod.outlook.com
+ ([fe80::f51e:a881:e361:8a92]) by MW3PR16MB3882.namprd16.prod.outlook.com
+ ([fe80::f51e:a881:e361:8a92%6]) with mapi id 15.21.0406.007; Wed, 16 Sep 2026
+ 21:11:21 +0000
+Content-Type: text/html; charset=utf-8
+From: PGE <ian.stanley@stu.spencer.kyschools.us>
+To: jops24@o2.pl
+Subject: Numer sprawy: KJ-2026/1906021
+Message-ID: <50e50e44-f083-2e41-5832-ad00238bff82@stu.spencer.kyschools.us>
+Content-Transfer-Encoding: quoted-printable
+Date: Wed, 16 Sep 2026 21:10:53 +0000
+X-ClientProxiedBy: CH0PR13CA0009.namprd13.prod.outlook.com
+ (2603:10b6:610:b1::14) To MW3PR16MB3882.namprd16.prod.outlook.com
+ (2603:10b6:303:4b::19)
+Return-Path: ian.stanley@stu.spencer.kyschools.us
+MIME-Version: 1.0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: MW3PR16MB3882:EE_|IA3PR16MB6726:EE_
+X-MS-Office365-Filtering-Correlation-Id: 29f7895e-bdb5-46f3-8d98-08df1436feed
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam:
+	BCL:0;ARA:13230040|366016|23010399003|41320700013|376014|52116014|1800799024|786006|10067099003|56012099006|38350700014|18002099003|8096899003;
+X-Microsoft-Antispam-Message-Info:
+	OjOfPSl5UjblfFW1ZvLhBYLWHN2gpLY5GMFF5YsSj7+wnRWQEUeOGLCJknnw+Yn0YtnouhvtNBG8jlrY4yIOGkEGxWBQIKctyJ4d9uE0ZRWoDP5DkFDjwrzvPHo7L1mOh8Rg7FNhxxSZ4NcK+afZCN3NmG83FdA4741Nl5AG1S1vs+ImoPxzAJNop7u2Tial2mMNCLEN6Q+e3P0qbK9R/2dLFgR0R+m2IoTfBvqyvkCaCGgVB+Sa6e9GwQTymlmo5lTl3p2B5UIZfkgze2chAuhjnrw5iS+goiV9beCcruDTPF1dfDc6gTyXNTRRjuQgxB4NNNNID6eO+zH7dMtlRz59ynKcmyHbQw3TUE7YwpvE8kcajujY2NB/Dv/jp1u2nQ44ShUxwzEyrVMWn24aNNoCF40hQOEAMPsK601s1UkXmmFhmJxt0Aq1KNsC81qSMWtYUi7wuBQ26tmoTACO4kQ4PIjA93xEQ5zGCP2Ov/Ie0mtxMOySTKwq6KL2m7DYbAZK06Av49gpMkCFtnsDsXZfuJGLlmYj8ttY6ByaxNcbo/ep+OnetZux+g2elh7NIU6IDjFCi8zCxmAEhu6O6f9JGddA4mgGv0YxZOmmYqV5dnptC3mqS2L+Za0Clz5Nuk2VH6fTeDXwAT3renAFJxPZTv6k2ynToPL2JDTLXPY=
+X-Forefront-Antispam-Report:
+	CIP:255.255.255.255;CTRY:;LANG:pl;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MW3PR16MB3882.namprd16.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(23010399003)(41320700013)(376014)(52116014)(1800799024)(786006)(10067099003)(56012099006)(38350700014)(18002099003)(8096899003);DIR:OUT;SFP:1102;
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0:
+	=?utf-8?B?Z3FucnVIVXR1NmhUaS9wdC9ITzdqVlVHWTE2TmVsSjhsRGt6N1Jxa09ZaE0x?=
+ =?utf-8?B?OFNMTWFxZmNGOVZIdDZrZ215UVpNbFVuRmtrTWprQWI2R2FZTmtyTTcrQ2ps?=
+ =?utf-8?B?UmlSTFpMRE5nZmpPVFJyZDFXeS9nTzFSUnJjTDZOZDIxVUw2NGpYSDdiQlFv?=
+ =?utf-8?B?aWYydVdqdzBuZjVlRERCbXFNbUozdzc1dDRPRkc0Yzg4YjU2NmN4aDhzVWFP?=
+ =?utf-8?B?SUk0MkRnRXp4ajJnZnJ4VTU5ZXZWeGRwaVRoeXVYeUlLbUFhYlQzZUYxSXV2?=
+ =?utf-8?B?SjR1Mzh4MXRWRXZXTGNhaTlSRTFkd015THlHY1BMK2VSdnlEald4ellIUmdE?=
+ =?utf-8?B?VXREMGpuRmRQNkVvOURpeVZrc2Vic1lteXJVc3RyTDN4aHJRLzlnSGNVQVBE?=
+ =?utf-8?B?N1FEVWZ4T0RqRVhBNkNSOVBnU1phKzBJd2dJUEQ1SW5NeUkzUFhQYkV1MDNI?=
+ =?utf-8?B?cWZYRlllL0wwbWxiYXpsbWJYOGx5L05HTkxYWnVhNnc3UytuclJvZVdwc2VZ?=
+ =?utf-8?B?NUlFZDJCNkZDYmlRVWEyOEJkYkE2ZHRKYVJkbXZaVGFEMFNuVUx0dlZKY1Ur?=
+ =?utf-8?B?YjZJSkZKTDhzbnhnWWJGNEZ3MVNuQzJFcWdCVW0zS29mMG9HM205cE55VGI0?=
+ =?utf-8?B?bG4vVmhicTljc0Z6TE93YXFzOENhb0FvbW0wZjhxMlFZbm9QcFpnVmhucTNS?=
+ =?utf-8?B?T1BObEVzcUIrTUt6MGVnZ0JNV09NYTVKVTBwcE9tb2dMTVF6MXJwMXVYdWJp?=
+ =?utf-8?B?dktmVlEyZkF3RXJJb1RSUEFwVktCRmRsdUtGM3ZhRHBkOTZ3MFBuQldvTEZN?=
+ =?utf-8?B?OG1ORzM1K3E3ck1QeFdpV0tYYm5pV0hYWHZ2L1ZtRGdsV2twZXZnZzZheDRQ?=
+ =?utf-8?B?aG4vdDZ1MzR6cE1yR2lDeDJBOU81ODh6WHo0ZkJlQll1UDg3anR3M043VHZt?=
+ =?utf-8?B?dW5ncVAxYzRjSnZoM25Ga0lyRmV1bGozbkdXKysxRHE1alI2NHRPUTRjc2V6?=
+ =?utf-8?B?UWtiVE1HejhTNXZsRFRscHJjZEJFeDhXREh0WEpHYUhWVkZrT25ZYVQzS1hL?=
+ =?utf-8?B?T1FaUENuRmRsU0NCeFRCdlJ5SG5qVWpzSVQwdXRIVUpKU0pURU9ISFN0QlhE?=
+ =?utf-8?B?RXpJS1JLZjd2QUUrMWRrL2MwMDVMeHJ5bGo1Z3VRL1Mwd2hFZi9ZVTdvR2RN?=
+ =?utf-8?B?UEExUG5wWFJURnkwd3RDVGh5Vld2NDZGUWhieUtVRnRnRHdqT251M3YvV2RQ?=
+ =?utf-8?B?b2RNR0xycVdFUVRNTmFNWFJrWnkvZEZVaWUwSHB6VUl4QUlBZzJaaTQ1Snp3?=
+ =?utf-8?B?VXdzdDdjLzJOU2tWQXR5cmkySlJVZWw4SUJaM3F3R0dJT1Z6N0sxMit1ODJH?=
+ =?utf-8?B?LzFzVDZNbXZoWHBPc1VXVTF1RUdoTG1pQWpZeVJBM25odDVtdTlJeGpRNjVE?=
+ =?utf-8?B?STB0NWZrbkZaVDBjVk1zOTMySUlZN0FNZExhdHJxLzh0TUVNck1ubGU3M0I3?=
+ =?utf-8?B?dVlYTG1hSFRhSWNkeC8wdXdjdlpNVENsTkdnZHZBOUZHMGRUSTdqTGYxQUxB?=
+ =?utf-8?B?L0hiRisydCtnWmQ1dGR4MUVvMkl3SGtyT1ZpSUZjSDhIRnVqN25XRXhkb2dH?=
+ =?utf-8?B?Yi9VeTdhUmU1cHNQN0FXTVp6b3doN1l3Rk5sUG5iWGdZWW9ndFlkZ0ZHbmpR?=
+ =?utf-8?B?MmNNSnJQVTd5cStOQ2JjL3RSaXMydFdMUURjTE9pTHRNYXdwVGlZWXpSQUtJ?=
+ =?utf-8?B?d1lCbkxhZW1vKzRDV21tSkMwRVV0aVhSQ0pwSXpmZ1M5V29OYWRNTXY3VkdE?=
+ =?utf-8?B?R0RLTnRqVmxZRnB3dkFXYUk0ZGhoTWxpOENhSkgzWDFmQVJIdFRpL20yUXUw?=
+ =?utf-8?B?MWczNWNXYW4zbjBRL2hBQm90ZWxUSnNqeE1TSml0TFZkY3NvTzlSWWRhNy9p?=
+ =?utf-8?B?a0xwak5vVzNodDdmMEwyb0NmMVQ4ZjR1YkdYcnhnSmNxQ3pLVjJBLzVoQTlq?=
+ =?utf-8?B?dEE0K0dLcVFkdzg1SXdCWnQ2RmQ4bU44U3JheVBVMnFUbTVYckEvUzNNc0h1?=
+ =?utf-8?B?RjNraEQ0WTczYmJGbWRsR2hiSVR5aXUzcjNqYktram9za1JCSXYwcXdZTzJU?=
+ =?utf-8?B?dzBpRS91d3gyWFlBWmlXWUUyeDMwZ1pMMUlKTWVmcmd4N1VVeXlOVEVRZ3ZH?=
+ =?utf-8?B?SEljaGkrdVVlTTVjT1pOM1BtNWRXSGxUWkJJbG5iSmlRY09VMXN2NmNlMXVZ?=
+ =?utf-8?B?OThaaXRUcGx4QnNFcWhqNlN1eU9vSXJKSTNQbDZvMVdBTHBhRmpIcVV3WVNC?=
+ =?utf-8?B?YUE3V1BmZ05Zb1RCRktXcUlEeW5tU1FMakNoVE0yWkVqQldqTUxYZThtSXVp?=
+ =?utf-8?Q?mY2th669D6CPbaCavpyHTv9VwvryuzK/zBPfv?=
+X-OriginatorOrg: stu.spencer.kyschools.us
+X-MS-Exchange-CrossTenant-Network-Message-Id: 29f7895e-bdb5-46f3-8d98-08df1436feed
+X-MS-Exchange-CrossTenant-AuthSource: MW3PR16MB3882.namprd16.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Sep 2026 21:10:54.9436
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 50f6daca-37c7-4489-8f48-55662135115c
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: uSzgyOkbs4PvSx7uoxTzNRbJlQtUnIMFEcgwmMp3TSiYC/TKkFQ7KmzRN9TzRdogf/3eVZygc4LeBfeWGP8ppmnf1RHjPVaFsBBfUaqMUMyC1NJw6v26bCyRmEPGbKbw
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: IA3PR16MB6726
+X-WP-DKIM-Status: good (id: stu.spencer.kyschools.us)                                                         
+X-WP-MailID: 032f6363dd98a98ef10871ef244ce5ba
+X-WP-AV: skaner antywirusowy Poczty o2
+X-WP-SPAM: NO (U9) 0100010 [YfO0]                          
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle></title>
+</head>
+<body>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: au=
+to; padding: 0px; border-width: 0px; border-style: solid; border-color: inh=
+erit; text-indent: 0px; border-collapse: collapse; --blur: ; --brightness: =
+; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --saturate: ; --=
+sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightness: ; --bac=
+kdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: ; --backdr=
+op-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --backdrop-sepia:=
+ ; --gradient-from-position: ; --gradient-to-position: ; --gradient-via-pos=
+ition: ; --scroll-snap-strictness: proximity; --border-spacing-x: 0; --bord=
+er-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-=
+x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; =
+color: rgb(44, 47, 69); font-family: Arial, Helvetica, sans-serif; font-siz=
+e: 14px; background: rgb(255, 255, 255); border-radius: 6px; overflow: hidd=
+en; box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px; position: static !importan=
+t;" width=3D"600">
+	<tbody style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style=
+: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; -=
+-brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --s=
+aturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-bright=
+ness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotat=
+e: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --ba=
+ckdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gra=
+dient-via-position: ; --scroll-snap-strictness: proximity; --border-spacing=
+-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate:=
+ 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; -=
+-scale-y: 1; position: static !important;">
+		<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: =
+solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; --b=
+rightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --sat=
+urate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightne=
+ss: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate:=
+ ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --back=
+drop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradi=
+ent-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-x=
+: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0=
+; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --s=
+cale-y: 1; position: static !important;">
+			<td align=3D"center" style=3D"margin: 0px; padding: 28px 40px 10px; bord=
+er-width: 0px; border-style: solid; border-color: rgb(44, 47, 69); box-sizi=
+ng: border-box; --blur: ; --brightness: ; --contrast: ; --grayscale: ; --hu=
+e-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdro=
+p-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-graysc=
+ale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; =
+--backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: ; --gr=
+adient-to-position: ; --gradient-via-position: ; --scroll-snap-strictness: =
+proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; =
+--translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; -=
+-skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important;">
+			<p style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: =
+solid; border-color: rgb(10, 26, 54); box-sizing: border-box; overflow-wrap=
+: break-word; --blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-=
+rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-=
+blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-grayscal=
+e: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --=
+backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: ; --grad=
+ient-to-position: ; --gradient-via-position: ; --scroll-snap-strictness: pr=
+oximity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --=
+translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --s=
+kew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important; font-siz=
+e: 38px; font-weight: bold; font-style: italic; color: rgb(10, 26, 54); let=
+ter-spacing: -0.5px;">PGE</p>
+
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin:=
+ 6px auto 0px; padding: 0px; border-width: 0px; border-style: solid; border=
+-color: inherit; text-indent: 0px; border-collapse: collapse; --blur: ; --b=
+rightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --sat=
+urate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightne=
+ss: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate:=
+ ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --back=
+drop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradi=
+ent-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-x=
+: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0=
+; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --s=
+cale-y: 1; position: static !important;">
+				<tbody style=3D"margin: 0px; padding: 0px; border-width: 0px; border-st=
+yle: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: =
+; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; =
+--saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-bri=
+ghtness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-ro=
+tate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; -=
+-backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --=
+gradient-via-position: ; --scroll-snap-strictness: proximity; --border-spac=
+ing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rota=
+te: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1=
+; --scale-y: 1; position: static !important;">
+					<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-styl=
+e: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; =
+--brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --=
+saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brigh=
+tness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rota=
+te: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --b=
+ackdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gr=
+adient-via-position: ; --scroll-snap-strictness: proximity; --border-spacin=
+g-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate=
+: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; =
+--scale-y: 1; position: static !important;">
+						<td bgcolor=3D"#e4002b" height=3D"6" style=3D"margin: 0px; padding: 0=
+px; border-width: 0px; border-style: solid; border-color: rgb(44, 47, 69); =
+box-sizing: border-box; --blur: ; --brightness: ; --contrast: ; --grayscale=
+: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; -=
+-backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdro=
+p-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opa=
+city: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position=
+: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-stri=
+ctness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translat=
+e-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew=
+-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important=
+; font-size: 0px; line-height: 0;" width=3D"15">&nbsp;</td>
+						<td bgcolor=3D"#ec3b24" height=3D"6" style=3D"margin: 0px; padding: 0=
+px; border-width: 0px; border-style: solid; border-color: rgb(44, 47, 69); =
+box-sizing: border-box; --blur: ; --brightness: ; --contrast: ; --grayscale=
+: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; -=
+-backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdro=
+p-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opa=
+city: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position=
+: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-stri=
+ctness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translat=
+e-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew=
+-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important=
+; font-size: 0px; line-height: 0;" width=3D"15">&nbsp;</td>
+						<td bgcolor=3D"#f26522" height=3D"6" style=3D"margin: 0px; padding: 0=
+px; border-width: 0px; border-style: solid; border-color: rgb(44, 47, 69); =
+box-sizing: border-box; --blur: ; --brightness: ; --contrast: ; --grayscale=
+: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; -=
+-backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdro=
+p-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opa=
+city: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position=
+: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-stri=
+ctness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translat=
+e-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew=
+-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important=
+; font-size: 0px; line-height: 0;" width=3D"15">&nbsp;</td>
+						<td bgcolor=3D"#f58424" height=3D"6" style=3D"margin: 0px; padding: 0=
+px; border-width: 0px; border-style: solid; border-color: rgb(44, 47, 69); =
+box-sizing: border-box; --blur: ; --brightness: ; --contrast: ; --grayscale=
+: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; -=
+-backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdro=
+p-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opa=
+city: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position=
+: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-stri=
+ctness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translat=
+e-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew=
+-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important=
+; font-size: 0px; line-height: 0;" width=3D"15">&nbsp;</td>
+						<td bgcolor=3D"#f7941e" height=3D"6" style=3D"margin: 0px; padding: 0=
+px; border-width: 0px; border-style: solid; border-color: rgb(44, 47, 69); =
+box-sizing: border-box; --blur: ; --brightness: ; --contrast: ; --grayscale=
+: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; -=
+-backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdro=
+p-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opa=
+city: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position=
+: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-stri=
+ctness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translat=
+e-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew=
+-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important=
+; font-size: 0px; line-height: 0;" width=3D"15">&nbsp;</td>
+						<td bgcolor=3D"#f9a61e" height=3D"6" style=3D"margin: 0px; padding: 0=
+px; border-width: 0px; border-style: solid; border-color: rgb(44, 47, 69); =
+box-sizing: border-box; --blur: ; --brightness: ; --contrast: ; --grayscale=
+: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; -=
+-backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdro=
+p-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opa=
+city: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position=
+: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-stri=
+ctness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translat=
+e-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew=
+-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important=
+; font-size: 0px; line-height: 0;" width=3D"15">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: =
+solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; --b=
+rightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --sat=
+urate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightne=
+ss: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate:=
+ ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --back=
+drop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradi=
+ent-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-x=
+: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0=
+; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --s=
+cale-y: 1; position: static !important;">
+			<td style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style:=
+ solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; --=
+brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --sa=
+turate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightn=
+ess: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate=
+: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --bac=
+kdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --grad=
+ient-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-=
+x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: =
+0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --=
+scale-y: 1; position: static !important; height: 5px; background: rgb(10, 2=
+6, 54); font-size: 0px; line-height: 0;">&nbsp;</td>
+		</tr>
+		<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: =
+solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; --b=
+rightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --sat=
+urate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightne=
+ss: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate:=
+ ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --back=
+drop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradi=
+ent-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-x=
+: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0=
+; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --s=
+cale-y: 1; position: static !important;">
+			<td style=3D"margin: 0px; padding: 20px 40px 6px; border-width: 0px; bor=
+der-style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --=
+blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --inve=
+rt: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdr=
+op-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-=
+hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturat=
+e: ; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position=
+: ; --gradient-via-position: ; --scroll-snap-strictness: proximity; --borde=
+r-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; =
+--rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scal=
+e-x: 1; --scale-y: 1; position: static !important;">
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin:=
+ auto; padding: 0px; border-width: 0px; border-style: solid; border-color: =
+inherit; text-indent: 0px; border-collapse: collapse; --blur: ; --brightnes=
+s: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --saturate: ;=
+ --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightness: ; --=
+backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: ; --bac=
+kdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --backdrop-sep=
+ia: ; --gradient-from-position: ; --gradient-to-position: ; --gradient-via-=
+position: ; --scroll-snap-strictness: proximity; --border-spacing-x: 0; --b=
+order-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rota=
+te-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: =
+1; position: static !important;" width=3D"100%">
+				<tbody style=3D"margin: 0px; padding: 0px; border-width: 0px; border-st=
+yle: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: =
+; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; =
+--saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-bri=
+ghtness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-ro=
+tate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; -=
+-backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --=
+gradient-via-position: ; --scroll-snap-strictness: proximity; --border-spac=
+ing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rota=
+te: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1=
+; --scale-y: 1; position: static !important;">
+					<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-styl=
+e: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; =
+--brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --=
+saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brigh=
+tness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rota=
+te: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --b=
+ackdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gr=
+adient-via-position: ; --scroll-snap-strictness: proximity; --border-spacin=
+g-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate=
+: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; =
+--scale-y: 1; position: static !important;">
+						<td style=3D"margin: 0px; padding: 0px; border-width: 0px; border-sty=
+le: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ;=
+ --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; -=
+-saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brig=
+htness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rot=
+ate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --=
+backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --g=
+radient-via-position: ; --scroll-snap-strictness: proximity; --border-spaci=
+ng-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotat=
+e: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1;=
+ --scale-y: 1; position: static !important;">
+						<p style=3D"margin: 0px; padding: 0px; border-width: 0px; border-styl=
+e: solid; border-color: rgb(10, 26, 54); box-sizing: border-box; overflow-w=
+rap: break-word; --blur: ; --brightness: ; --contrast: ; --grayscale: ; --h=
+ue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdr=
+op-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-grays=
+cale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ;=
+ --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: ; --g=
+radient-to-position: ; --gradient-via-position: ; --scroll-snap-strictness:=
+ proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0;=
+ --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; =
+--skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important; font-=
+size: 19px; font-weight: 800; color: rgb(10, 26, 54);">Korekta prognozy zu=
+=C5=BCycia</p>
+						</td>
+						<td align=3D"right" style=3D"margin: 0px; padding: 0px; border-width:=
+ 0px; border-style: solid; border-color: rgb(44, 47, 69); box-sizing: borde=
+r-box; --blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate:=
+ ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ;=
+ --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --=
+backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdro=
+p-saturate: ; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to=
+-position: ; --gradient-via-position: ; --scroll-snap-strictness: proximity=
+; --border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --transla=
+te-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: =
+0; --scale-x: 1; --scale-y: 1; position: static !important;">
+						<p style=3D"margin: 0px; padding: 0px; border-width: 0px; border-styl=
+e: solid; border-color: rgb(154, 164, 178); box-sizing: border-box; overflo=
+w-wrap: break-word; --blur: ; --brightness: ; --contrast: ; --grayscale: ; =
+--hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --bac=
+kdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-gr=
+ayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity=
+: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: ; =
+--gradient-to-position: ; --gradient-via-position: ; --scroll-snap-strictne=
+ss: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-x:=
+ 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: =
+0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important; fo=
+nt-size: 10px; color: rgb(154, 164, 178);">SPRAWA</p>
+
+						<p style=3D"margin: 2px 0px 0px; padding: 0px; border-width: 0px; bor=
+der-style: solid; border-color: rgb(10, 26, 54); box-sizing: border-box; ov=
+erflow-wrap: break-word; --blur: ; --brightness: ; --contrast: ; --grayscal=
+e: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; =
+--backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdr=
+op-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-op=
+acity: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-positio=
+n: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-str=
+ictness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --transla=
+te-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --ske=
+w-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !importan=
+t; font-size: 12px; font-weight: bold; color: rgb(10, 26, 54);">KJ-2026/190=
+6021</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: =
+solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; --b=
+rightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --sat=
+urate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightne=
+ss: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate:=
+ ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --back=
+drop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradi=
+ent-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-x=
+: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0=
+; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --s=
+cale-y: 1; position: static !important;">
+			<td style=3D"margin: 0px; padding: 12px 40px 6px; border-width: 0px; bor=
+der-style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --=
+blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --inve=
+rt: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdr=
+op-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-=
+hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturat=
+e: ; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position=
+: ; --gradient-via-position: ; --scroll-snap-strictness: proximity; --borde=
+r-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; =
+--rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scal=
+e-x: 1; --scale-y: 1; position: static !important;">
+			<p style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: =
+solid; border-color: rgb(44, 47, 69); box-sizing: border-box; overflow-wrap=
+: break-word; --blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-=
+rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-=
+blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-grayscal=
+e: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --=
+backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: ; --grad=
+ient-to-position: ; --gradient-via-position: ; --scroll-snap-strictness: pr=
+oximity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --=
+translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --s=
+kew-y: 0; --scale-x: 1; --scale-y: 1; font-weight: bold; position: static !=
+important;">Dzie=C5=84 dobry,</p>
+			</td>
+		</tr>
+		<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: =
+solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; --b=
+rightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --sat=
+urate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightne=
+ss: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate:=
+ ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --back=
+drop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradi=
+ent-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-x=
+: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0=
+; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --s=
+cale-y: 1; position: static !important;">
+			<td style=3D"margin: 0px; padding: 6px 40px 10px; border-width: 0px; bor=
+der-style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --=
+blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --inve=
+rt: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdr=
+op-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-=
+hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturat=
+e: ; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position=
+: ; --gradient-via-position: ; --scroll-snap-strictness: proximity; --borde=
+r-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; =
+--rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scal=
+e-x: 1; --scale-y: 1; position: static !important;">
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin:=
+ auto; padding: 0px; border-width: 0px 0px 0px 4px; border-style: solid; bo=
+rder-top-color: inherit; border-right-color: inherit; border-bottom-color: =
+inherit; border-left-color: rgb(10, 26, 54); text-indent: 0px; border-colla=
+pse: collapse; --blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue=
+-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop=
+-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-graysca=
+le: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; -=
+-backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: ; --gra=
+dient-to-position: ; --gradient-via-position: ; --scroll-snap-strictness: p=
+roximity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; -=
+-translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --=
+skew-y: 0; --scale-x: 1; --scale-y: 1; background: rgb(245, 247, 251); posi=
+tion: static !important;" width=3D"100%">
+				<tbody style=3D"margin: 0px; padding: 0px; border-width: 0px; border-st=
+yle: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: =
+; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; =
+--saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-bri=
+ghtness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-ro=
+tate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; -=
+-backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --=
+gradient-via-position: ; --scroll-snap-strictness: proximity; --border-spac=
+ing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rota=
+te: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1=
+; --scale-y: 1; position: static !important;">
+					<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-styl=
+e: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; =
+--brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --=
+saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brigh=
+tness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rota=
+te: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --b=
+ackdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gr=
+adient-via-position: ; --scroll-snap-strictness: proximity; --border-spacin=
+g-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate=
+: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; =
+--scale-y: 1; position: static !important;">
+						<td style=3D"margin: 0px; padding: 16px 20px; border-width: 0px; bord=
+er-style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --b=
+lur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --inver=
+t: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdro=
+p-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-h=
+ue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate=
+: ; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position:=
+ ; --gradient-via-position: ; --scroll-snap-strictness: proximity; --border=
+-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; -=
+-rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale=
+-x: 1; --scale-y: 1; position: static !important;">
+						<p style=3D"margin: 0px; padding: 0px; border-width: 0px; border-styl=
+e: solid; border-color: rgb(75, 85, 99); box-sizing: border-box; overflow-w=
+rap: break-word; --blur: ; --brightness: ; --contrast: ; --grayscale: ; --h=
+ue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdr=
+op-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-grays=
+cale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ;=
+ --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: ; --g=
+radient-to-position: ; --gradient-via-position: ; --scroll-snap-strictness:=
+ proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0;=
+ --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; =
+--skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important; font-=
+size: 13px; color: rgb(75, 85, 99); line-height: 21px;">Z przyczyn le=C5=BC=
+=C4=85cych po stronie dostawcy, system APZ (Algorytm Prognozowania Zu=C5=BC=
+ycia) mia=C5=82 b=C5=82=C4=85d kalibracji w okresie 03=E2=80=9307.2026, w w=
+yniku kt=C3=B3rego prognozowane zu=C5=BCycie by=C5=82o zawy=C5=BCone wzgl=
+=C4=99dem zu=C5=BCycia rzeczywistego. R=C3=B3=C5=BCnica zostaje Pa=C5=84stw=
+u zwr=C3=B3cona w ca=C5=82o=C5=9Bci.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: =
+solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; --b=
+rightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --sat=
+urate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightne=
+ss: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate:=
+ ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --back=
+drop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradi=
+ent-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-x=
+: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0=
+; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --s=
+cale-y: 1; position: static !important;">
+			<td style=3D"margin: 0px; padding: 6px 40px 18px; border-width: 0px; bor=
+der-style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --=
+blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --inve=
+rt: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdr=
+op-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-=
+hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturat=
+e: ; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position=
+: ; --gradient-via-position: ; --scroll-snap-strictness: proximity; --borde=
+r-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; =
+--rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scal=
+e-x: 1; --scale-y: 1; position: static !important;">
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin:=
+ auto; padding: 0px; border: 1px solid rgb(226, 231, 240); text-indent: 0px=
+; border-collapse: collapse; --blur: ; --brightness: ; --contrast: ; --gray=
+scale: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow=
+: ; --backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --ba=
+ckdrop-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdro=
+p-opacity: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-pos=
+ition: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap=
+-strictness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --tra=
+nslate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; -=
+-skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !impo=
+rtant;" width=3D"100%">
+				<tbody style=3D"margin: 0px; padding: 0px; border-width: 0px; border-st=
+yle: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: =
+; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; =
+--saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-bri=
+ghtness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-ro=
+tate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; -=
+-backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --=
+gradient-via-position: ; --scroll-snap-strictness: proximity; --border-spac=
+ing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rota=
+te: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1=
+; --scale-y: 1; position: static !important;">
+					<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-styl=
+e: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; =
+--brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --=
+saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brigh=
+tness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rota=
+te: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --b=
+ackdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gr=
+adient-via-position: ; --scroll-snap-strictness: proximity; --border-spacin=
+g-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate=
+: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; =
+--scale-y: 1; position: static !important;">
+						<td style=3D"margin: 0px; padding: 20px 22px; border-width: 0px; bord=
+er-style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --b=
+lur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --inver=
+t: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdro=
+p-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-h=
+ue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate=
+: ; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position:=
+ ; --gradient-via-position: ; --scroll-snap-strictness: proximity; --border=
+-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; -=
+-rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale=
+-x: 1; --scale-y: 1; position: static !important;">
+						<p style=3D"margin: 0px 0px 16px; padding: 0px; border-width: 0px; bo=
+rder-style: solid; border-color: rgb(93, 125, 176); box-sizing: border-box;=
+ overflow-wrap: break-word; --blur: ; --brightness: ; --contrast: ; --grays=
+cale: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow:=
+ ; --backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --bac=
+kdrop-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop=
+-opacity: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-posi=
+tion: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-=
+strictness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --tran=
+slate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --=
+skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !impor=
+tant; font-size: 11px; font-weight: bold; color: rgb(93, 125, 176); letter-=
+spacing: 0px;">PROGNOZA A ZU=C5=BBYCIE RZECZYWISTE</p>
+
+						<p style=3D"margin: 0px 0px 4px; padding: 0px; border-width: 0px; bor=
+der-style: solid; border-color: rgb(125, 138, 163); box-sizing: border-box;=
+ overflow-wrap: break-word; --blur: ; --brightness: ; --contrast: ; --grays=
+cale: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow:=
+ ; --backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --bac=
+kdrop-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop=
+-opacity: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-posi=
+tion: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-=
+strictness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --tran=
+slate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --=
+skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !impor=
+tant; font-size: 12px; color: rgb(125, 138, 163);">Prognoza APZ (=C5=9Bredn=
+io / miesi=C4=85c)</p>
+
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"marg=
+in: auto; padding: 0px; border-width: 0px; border-style: solid; border-colo=
+r: inherit; text-indent: 0px; border-collapse: collapse; --blur: ; --bright=
+ness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --saturate=
+: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightness: ;=
+ --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: ; --=
+backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --backdrop-=
+sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradient-v=
+ia-position: ; --scroll-snap-strictness: proximity; --border-spacing-x: 0; =
+--border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --r=
+otate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-=
+y: 1; position: static !important;" width=3D"100%">
+							<tbody style=3D"margin: 0px; padding: 0px; border-width: 0px; border=
+-style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blu=
+r: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert:=
+ ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-=
+brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue=
+-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: =
+; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ;=
+ --gradient-via-position: ; --scroll-snap-strictness: proximity; --border-s=
+pacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --r=
+otate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x=
+: 1; --scale-y: 1; position: static !important;">
+								<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-s=
+tyle: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur:=
+ ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ;=
+ --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-br=
+ightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-r=
+otate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; =
+--backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; -=
+-gradient-via-position: ; --scroll-snap-strictness: proximity; --border-spa=
+cing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rot=
+ate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: =
+1; --scale-y: 1; position: static !important;">
+									<td style=3D"margin: 0px; padding: 0px; border-width: 0px; border-=
+style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur=
+: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: =
+; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-b=
+rightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-=
+rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ;=
+ --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; =
+--gradient-via-position: ; --scroll-snap-strictness: proximity; --border-sp=
+acing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --ro=
+tate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x:=
+ 1; --scale-y: 1; position: static !important; height: 16px; background: rg=
+b(199, 212, 232); font-size: 0px; line-height: 0;" width=3D"82%">&nbsp;</td=
+>
+									<td align=3D"right" style=3D"margin: 0px; padding: 0px 0px 0px 8px=
+; border-width: 0px; border-style: solid; border-color: rgb(10, 26, 54); bo=
+x-sizing: border-box; --blur: ; --brightness: ; --contrast: ; --grayscale: =
+; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --b=
+ackdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-=
+grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opaci=
+ty: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: =
+; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-strict=
+ness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-=
+x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x=
+: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important; =
+font-size: 12px; font-weight: bold; color: rgb(10, 26, 54);" width=3D"18%">=
+1247,00 z=C5=82</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<p style=3D"margin: 14px 0px 4px; padding: 0px; border-width: 0px; bo=
+rder-style: solid; border-color: rgb(125, 138, 163); box-sizing: border-box=
+; overflow-wrap: break-word; --blur: ; --brightness: ; --contrast: ; --gray=
+scale: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow=
+: ; --backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --ba=
+ckdrop-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdro=
+p-opacity: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-pos=
+ition: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap=
+-strictness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --tra=
+nslate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; -=
+-skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !impo=
+rtant; font-size: 12px; color: rgb(125, 138, 163);">Zu=C5=BCycie rzeczywist=
+e (=C5=9Brednio / miesi=C4=85c)</p>
+
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"marg=
+in: auto; padding: 0px; border-width: 0px; border-style: solid; border-colo=
+r: inherit; text-indent: 0px; border-collapse: collapse; --blur: ; --bright=
+ness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --saturate=
+: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightness: ;=
+ --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: ; --=
+backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --backdrop-=
+sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradient-v=
+ia-position: ; --scroll-snap-strictness: proximity; --border-spacing-x: 0; =
+--border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --r=
+otate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-=
+y: 1; position: static !important;" width=3D"100%">
+							<tbody style=3D"margin: 0px; padding: 0px; border-width: 0px; border=
+-style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blu=
+r: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert:=
+ ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-=
+brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue=
+-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: =
+; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ;=
+ --gradient-via-position: ; --scroll-snap-strictness: proximity; --border-s=
+pacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --r=
+otate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x=
+: 1; --scale-y: 1; position: static !important;">
+								<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-s=
+tyle: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur:=
+ ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ;=
+ --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-br=
+ightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-r=
+otate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; =
+--backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; -=
+-gradient-via-position: ; --scroll-snap-strictness: proximity; --border-spa=
+cing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rot=
+ate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: =
+1; --scale-y: 1; position: static !important;">
+									<td style=3D"margin: 0px; padding: 0px; border-width: 0px; border-=
+style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur=
+: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: =
+; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-b=
+rightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-=
+rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ;=
+ --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; =
+--gradient-via-position: ; --scroll-snap-strictness: proximity; --border-sp=
+acing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --ro=
+tate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x:=
+ 1; --scale-y: 1; position: static !important; height: 16px; background: rg=
+b(30, 76, 138); font-size: 0px; line-height: 0;" width=3D"55%">&nbsp;</td>
+									<td align=3D"right" style=3D"margin: 0px; padding: 0px 0px 0px 8px=
+; border-width: 0px; border-style: solid; border-color: rgb(10, 26, 54); bo=
+x-sizing: border-box; --blur: ; --brightness: ; --contrast: ; --grayscale: =
+; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --b=
+ackdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-=
+grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opaci=
+ty: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: =
+; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-strict=
+ness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-=
+x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x=
+: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important; =
+font-size: 12px; font-weight: bold; color: rgb(10, 26, 54);" width=3D"45%">=
+249,00 z=C5=82</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: =
+solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; --b=
+rightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --sat=
+urate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightne=
+ss: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate:=
+ ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --back=
+drop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradi=
+ent-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-x=
+: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0=
+; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --s=
+cale-y: 1; position: static !important;">
+			<td style=3D"margin: 0px; padding: 0px 40px; border-width: 0px; border-s=
+tyle: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur:=
+ ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ;=
+ --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-br=
+ightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-r=
+otate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; =
+--backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; -=
+-gradient-via-position: ; --scroll-snap-strictness: proximity; --border-spa=
+cing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rot=
+ate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: =
+1; --scale-y: 1; position: static !important;">
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin:=
+ auto; padding: 0px; border-width: 0px; border-style: solid; border-color: =
+inherit; text-indent: 0px; border-collapse: collapse; --blur: ; --brightnes=
+s: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --saturate: ;=
+ --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightness: ; --=
+backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: ; --bac=
+kdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --backdrop-sep=
+ia: ; --gradient-from-position: ; --gradient-to-position: ; --gradient-via-=
+position: ; --scroll-snap-strictness: proximity; --border-spacing-x: 0; --b=
+order-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rota=
+te-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: =
+1; background: rgb(10, 26, 54); position: static !important;" width=3D"100%=
+">
+				<tbody style=3D"margin: 0px; padding: 0px; border-width: 0px; border-st=
+yle: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: =
+; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; =
+--saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-bri=
+ghtness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-ro=
+tate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; -=
+-backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --=
+gradient-via-position: ; --scroll-snap-strictness: proximity; --border-spac=
+ing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rota=
+te: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1=
+; --scale-y: 1; position: static !important;">
+					<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-styl=
+e: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; =
+--brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --=
+saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brigh=
+tness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rota=
+te: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --b=
+ackdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gr=
+adient-via-position: ; --scroll-snap-strictness: proximity; --border-spacin=
+g-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate=
+: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; =
+--scale-y: 1; position: static !important;">
+						<td style=3D"margin: 0px; padding: 24px 28px; border-width: 0px; bord=
+er-style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --b=
+lur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --inver=
+t: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdro=
+p-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-h=
+ue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate=
+: ; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position:=
+ ; --gradient-via-position: ; --scroll-snap-strictness: proximity; --border=
+-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; -=
+-rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale=
+-x: 1; --scale-y: 1; position: static !important;">
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"marg=
+in: auto; padding: 0px; border-width: 0px; border-style: solid; border-colo=
+r: inherit; text-indent: 0px; border-collapse: collapse; --blur: ; --bright=
+ness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --saturate=
+: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightness: ;=
+ --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: ; --=
+backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --backdrop-=
+sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradient-v=
+ia-position: ; --scroll-snap-strictness: proximity; --border-spacing-x: 0; =
+--border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --r=
+otate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-=
+y: 1; position: static !important;" width=3D"100%">
+							<tbody style=3D"margin: 0px; padding: 0px; border-width: 0px; border=
+-style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blu=
+r: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert:=
+ ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-=
+brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue=
+-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: =
+; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ;=
+ --gradient-via-position: ; --scroll-snap-strictness: proximity; --border-s=
+pacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --r=
+otate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x=
+: 1; --scale-y: 1; position: static !important;">
+								<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-s=
+tyle: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur:=
+ ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ;=
+ --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-br=
+ightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-r=
+otate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; =
+--backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; -=
+-gradient-via-position: ; --scroll-snap-strictness: proximity; --border-spa=
+cing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rot=
+ate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: =
+1; --scale-y: 1; position: static !important;">
+									<td style=3D"margin: 0px; padding: 0px; border-width: 0px; border-=
+style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur=
+: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: =
+; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-b=
+rightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-=
+rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ;=
+ --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; =
+--gradient-via-position: ; --scroll-snap-strictness: proximity; --border-sp=
+acing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --ro=
+tate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x:=
+ 1; --scale-y: 1; position: static !important;" width=3D"60%">
+									<p style=3D"margin: 0px 0px 6px; padding: 0px; border-width: 0px; =
+border-style: solid; border-color: rgb(93, 125, 176); box-sizing: border-bo=
+x; overflow-wrap: break-word; --blur: ; --brightness: ; --contrast: ; --gra=
+yscale: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shado=
+w: ; --backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --b=
+ackdrop-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdr=
+op-opacity: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-po=
+sition: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-sna=
+p-strictness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --tr=
+anslate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; =
+--skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !imp=
+ortant; font-size: 11px; font-weight: bold; color: rgb(93, 125, 176); lette=
+r-spacing: 0px;">KWOTA DO ZWROTU</p>
+
+									<p style=3D"margin: 0px; padding: 0px; border-width: 0px; border-s=
+tyle: solid; border-color: rgb(255, 255, 255); box-sizing: border-box; over=
+flow-wrap: break-word; --blur: ; --brightness: ; --contrast: ; --grayscale:=
+ ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --=
+backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop=
+-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opac=
+ity: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position:=
+ ; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-stric=
+tness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translate=
+-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-=
+x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important;=
+ font-size: 32px; font-weight: bold; color: rgb(255, 255, 255);">998,00 <sp=
+an style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: sol=
+id; border-color: rgb(93, 125, 176); box-sizing: border-box; --blur: ; --br=
+ightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --satu=
+rate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightnes=
+s: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: =
+; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --backd=
+rop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradie=
+nt-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-x:=
+ 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0;=
+ --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --sc=
+ale-y: 1; position: static !important; font-size: 14px; font-weight: normal=
+; color: rgb(93, 125, 176);">PLN</span></p>
+									</td>
+									<td align=3D"right" style=3D"margin: 0px; padding: 0px; border-wid=
+th: 0px; border-style: solid; border-color: rgb(44, 47, 69); box-sizing: bo=
+rder-box; --blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rota=
+te: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur=
+: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ;=
+ --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --back=
+drop-saturate: ; --backdrop-sepia: ; --gradient-from-position: ; --gradient=
+-to-position: ; --gradient-via-position: ; --scroll-snap-strictness: proxim=
+ity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --tran=
+slate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-=
+y: 0; --scale-x: 1; --scale-y: 1; position: static !important;" width=3D"40=
+%">
+									<p style=3D"margin: 0px; padding: 0px; border-width: 0px; border-s=
+tyle: solid; border-color: rgb(93, 125, 176); box-sizing: border-box; overf=
+low-wrap: break-word; --blur: ; --brightness: ; --contrast: ; --grayscale: =
+; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --b=
+ackdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-=
+grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opaci=
+ty: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: =
+; --gradient-to-position: ; --gradient-via-position: ; --scroll-snap-strict=
+ness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-=
+x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x=
+: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important; =
+font-size: 11px; color: rgb(93, 125, 176);">Forma zwrotu</p>
+
+									<p style=3D"margin: 4px 0px 0px; padding: 0px; border-width: 0px; =
+border-style: solid; border-color: rgb(255, 255, 255); box-sizing: border-b=
+ox; overflow-wrap: break-word; --blur: ; --brightness: ; --contrast: ; --gr=
+ayscale: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shad=
+ow: ; --backdrop-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --=
+backdrop-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backd=
+rop-opacity: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-p=
+osition: ; --gradient-to-position: ; --gradient-via-position: ; --scroll-sn=
+ap-strictness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; --t=
+ranslate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0;=
+ --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !im=
+portant; font-size: 13px; font-weight: bold; color: rgb(255, 255, 255);">Uz=
+nanie na fakturze</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: =
+solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; --b=
+rightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --sat=
+urate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightne=
+ss: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate:=
+ ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --back=
+drop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradi=
+ent-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-x=
+: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0=
+; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --s=
+cale-y: 1; position: static !important;">
+			<td style=3D"margin: 0px; padding: 20px 40px 10px; border-width: 0px; bo=
+rder-style: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; -=
+-blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --inv=
+ert: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backd=
+rop-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop=
+-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-satura=
+te: ; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-positio=
+n: ; --gradient-via-position: ; --scroll-snap-strictness: proximity; --bord=
+er-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0;=
+ --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --sca=
+le-x: 1; --scale-y: 1; position: static !important;">
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin:=
+ auto; padding: 0px; border-width: 0px; border-style: solid; border-color: =
+inherit; text-indent: 0px; border-collapse: collapse; --blur: ; --brightnes=
+s: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --saturate: ;=
+ --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightness: ; --=
+backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: ; --bac=
+kdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --backdrop-sep=
+ia: ; --gradient-from-position: ; --gradient-to-position: ; --gradient-via-=
+position: ; --scroll-snap-strictness: proximity; --border-spacing-x: 0; --b=
+order-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rota=
+te-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: =
+1; font-size: 13px; color: rgb(55, 65, 81); position: static !important;" w=
+idth=3D"100%">
+				<tbody style=3D"margin: 0px; padding: 0px; border-width: 0px; border-st=
+yle: solid; border-color: rgb(55, 65, 81); box-sizing: border-box; --blur: =
+; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; =
+--saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-bri=
+ghtness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-ro=
+tate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; -=
+-backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --=
+gradient-via-position: ; --scroll-snap-strictness: proximity; --border-spac=
+ing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rota=
+te: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1=
+; --scale-y: 1; position: static !important;">
+					<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-styl=
+e: solid; border-color: rgb(55, 65, 81); box-sizing: border-box; --blur: ; =
+--brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --=
+saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brigh=
+tness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rota=
+te: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --b=
+ackdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gr=
+adient-via-position: ; --scroll-snap-strictness: proximity; --border-spacin=
+g-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate=
+: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; =
+--scale-y: 1; position: static !important;">
+						<td style=3D"margin: 0px; padding: 7px 0px; border-width: 0px 0px 1px=
+; border-style: solid; border-color: rgb(125, 138, 163) rgb(125, 138, 163) =
+rgb(238, 241, 246); box-sizing: border-box; --blur: ; --brightness: ; --con=
+trast: ; --grayscale: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: =
+; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightness: ; --backdrop-c=
+ontrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: ; --backdrop-inve=
+rt: ; --backdrop-opacity: ; --backdrop-saturate: ; --backdrop-sepia: ; --gr=
+adient-from-position: ; --gradient-to-position: ; --gradient-via-position: =
+; --scroll-snap-strictness: proximity; --border-spacing-x: 0; --border-spac=
+ing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; -=
+-rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; positio=
+n: static !important; color: rgb(125, 138, 163);">Numer umowy</td>
+						<td align=3D"right" style=3D"margin: 0px; padding: 7px 0px; border-wi=
+dth: 0px 0px 1px; border-style: solid; border-color: rgb(55, 65, 81) rgb(55=
+, 65, 81) rgb(238, 241, 246); box-sizing: border-box; --blur: ; --brightnes=
+s: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --saturate: ;=
+ --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightness: ; --=
+backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: ; --bac=
+kdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --backdrop-sep=
+ia: ; --gradient-from-position: ; --gradient-to-position: ; --gradient-via-=
+position: ; --scroll-snap-strictness: proximity; --border-spacing-x: 0; --b=
+order-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rota=
+te-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: =
+1; position: static !important; font-weight: bold;">EN22-8834</td>
+					</tr>
+					<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-styl=
+e: solid; border-color: rgb(55, 65, 81); box-sizing: border-box; --blur: ; =
+--brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --=
+saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brigh=
+tness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rota=
+te: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --b=
+ackdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gr=
+adient-via-position: ; --scroll-snap-strictness: proximity; --border-spacin=
+g-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate=
+: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; =
+--scale-y: 1; position: static !important;">
+						<td style=3D"margin: 0px; padding: 7px 0px; border-width: 0px; border=
+-style: solid; border-color: rgb(125, 138, 163); box-sizing: border-box; --=
+blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --inve=
+rt: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdr=
+op-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-=
+hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturat=
+e: ; --backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position=
+: ; --gradient-via-position: ; --scroll-snap-strictness: proximity; --borde=
+r-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; =
+--rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scal=
+e-x: 1; --scale-y: 1; position: static !important; color: rgb(125, 138, 163=
+);">Okres obj=C4=99ty korekt=C4=85</td>
+						<td align=3D"right" style=3D"margin: 0px; padding: 7px 0px; border-wi=
+dth: 0px; border-style: solid; border-color: rgb(55, 65, 81); box-sizing: b=
+order-box; --blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rot=
+ate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blu=
+r: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: =
+; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --bac=
+kdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: ; --gradien=
+t-to-position: ; --gradient-via-position: ; --scroll-snap-strictness: proxi=
+mity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --tra=
+nslate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew=
+-y: 0; --scale-x: 1; --scale-y: 1; position: static !important; font-weight=
+: bold;">03.2026 =E2=80=93 07.2026</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: =
+solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; --b=
+rightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --sat=
+urate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightne=
+ss: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate:=
+ ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --back=
+drop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradi=
+ent-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-x=
+: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0=
+; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --s=
+cale-y: 1; position: static !important;">
+			<td align=3D"center" style=3D"margin: 0px; padding: 16px 40px 28px; bord=
+er-width: 0px; border-style: solid; border-color: rgb(44, 47, 69); box-sizi=
+ng: border-box; --blur: ; --brightness: ; --contrast: ; --grayscale: ; --hu=
+e-rotate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdro=
+p-blur: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-graysc=
+ale: ; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; =
+--backdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: ; --gr=
+adient-to-position: ; --gradient-via-position: ; --scroll-snap-strictness: =
+proximity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; =
+--translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; -=
+-skew-y: 0; --scale-x: 1; --scale-y: 1; position: static !important;">
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin:=
+ auto; padding: 0px; border-width: 0px; border-style: solid; border-color: =
+inherit; text-indent: 0px; border-collapse: collapse; --blur: ; --brightnes=
+s: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --saturate: ;=
+ --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightness: ; --=
+backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: ; --bac=
+kdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --backdrop-sep=
+ia: ; --gradient-from-position: ; --gradient-to-position: ; --gradient-via-=
+position: ; --scroll-snap-strictness: proximity; --border-spacing-x: 0; --b=
+order-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rota=
+te-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: =
+1; position: static !important;">
+				<tbody style=3D"margin: 0px; padding: 0px; border-width: 0px; border-st=
+yle: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: =
+; --brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; =
+--saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-bri=
+ghtness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-ro=
+tate: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; -=
+-backdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --=
+gradient-via-position: ; --scroll-snap-strictness: proximity; --border-spac=
+ing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rota=
+te: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1=
+; --scale-y: 1; position: static !important;">
+					<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-styl=
+e: solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; =
+--brightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --=
+saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brigh=
+tness: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rota=
+te: ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --b=
+ackdrop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gr=
+adient-via-position: ; --scroll-snap-strictness: proximity; --border-spacin=
+g-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate=
+: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; =
+--scale-y: 1; position: static !important;">
+						<td bgcolor=3D"#1a7758" style=3D"margin: 0px; padding: 0px; border-wi=
+dth: 0px; border-style: solid; border-color: rgb(44, 47, 69); box-sizing: b=
+order-box; --blur: ; --brightness: ; --contrast: ; --grayscale: ; --hue-rot=
+ate: ; --invert: ; --saturate: ; --sepia: ; --drop-shadow: ; --backdrop-blu=
+r: ; --backdrop-brightness: ; --backdrop-contrast: ; --backdrop-grayscale: =
+; --backdrop-hue-rotate: ; --backdrop-invert: ; --backdrop-opacity: ; --bac=
+kdrop-saturate: ; --backdrop-sepia: ; --gradient-from-position: ; --gradien=
+t-to-position: ; --gradient-via-position: ; --scroll-snap-strictness: proxi=
+mity; --border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --tra=
+nslate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew=
+-y: 0; --scale-x: 1; --scale-y: 1; position: static !important; border-radi=
+us: 4px; text-align: center;"><a data-saferedirecturl=3D"https://zasobygwp.=
+pl/redirect?sig=3D5f1d805a2de15fc39adcedd7903a9486ef463c20ecade14fd478d8b66=
+3c7c9b5&amp;url=3DaHR0cHM6Ly9na2QxNC5iZW1vYnRyay5jb20v&amp;platform=3Ddeskt=
+op&amp;brand=3Do2" href=3D"https://sagabfm.main.jp/shop_file/shop_images/sh=
+8603/png/" nh-safe-redirect=3D"" rel=3D"noopener noreferrer" style=3D"margi=
+n: 0px; padding: 12px 32px; border: 0px; box-sizing: border-box; text-decor=
+ation: none; color: rgb(255, 255, 255); --blur: ; --brightness: ; --contras=
+t: ; --grayscale: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ; --=
+drop-shadow: ; --backdrop-blur: ; --backdrop-brightness: ; --backdrop-contr=
+ast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: ; --backdrop-invert: =
+; --backdrop-opacity: ; --backdrop-saturate: ; --backdrop-sepia: ; --gradie=
+nt-from-position: ; --gradient-to-position: ; --gradient-via-position: ; --=
+scroll-snap-strictness: proximity; --border-spacing-x: 0; --border-spacing-=
+y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rot=
+ate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; display: bl=
+ock; font-weight: bold; background-image: initial; background-position: ini=
+tial; background-size: initial; background-repeat: initial; background-atta=
+chment: initial; background-origin: initial; background-clip: initial; bord=
+er-radius: 4px; position: static !important;" target=3D"_blank">Portal Klie=
+nta</a></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr style=3D"margin: 0px; padding: 0px; border-width: 0px; border-style: =
+solid; border-color: rgb(44, 47, 69); box-sizing: border-box; --blur: ; --b=
+rightness: ; --contrast: ; --grayscale: ; --hue-rotate: ; --invert: ; --sat=
+urate: ; --sepia: ; --drop-shadow: ; --backdrop-blur: ; --backdrop-brightne=
+ss: ; --backdrop-contrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate:=
+ ; --backdrop-invert: ; --backdrop-opacity: ; --backdrop-saturate: ; --back=
+drop-sepia: ; --gradient-from-position: ; --gradient-to-position: ; --gradi=
+ent-via-position: ; --scroll-snap-strictness: proximity; --border-spacing-x=
+: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0=
+; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --s=
+cale-y: 1; position: static !important;">
+			<td style=3D"margin: 0px; padding: 16px 40px; border-width: 1px 0px 0px;=
+ border-style: solid; border-color: rgb(226, 231, 240) rgb(152, 162, 179) r=
+gb(152, 162, 179); box-sizing: border-box; --blur: ; --brightness: ; --cont=
+rast: ; --grayscale: ; --hue-rotate: ; --invert: ; --saturate: ; --sepia: ;=
+ --drop-shadow: ; --backdrop-blur: ; --backdrop-brightness: ; --backdrop-co=
+ntrast: ; --backdrop-grayscale: ; --backdrop-hue-rotate: ; --backdrop-inver=
+t: ; --backdrop-opacity: ; --backdrop-saturate: ; --backdrop-sepia: ; --gra=
+dient-from-position: ; --gradient-to-position: ; --gradient-via-position: ;=
+ --scroll-snap-strictness: proximity; --border-spacing-x: 0; --border-spaci=
+ng-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --=
+rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; position=
+: static !important; font-size: 10px; color: rgb(152, 162, 179); line-heigh=
+t: 16px;"><a class=3D"ui-link ui-widget company-text-data" href=3D"http://w=
+ww.gkpge.pl/" style=3D"font-family: Verdana, Geneva, sans-serif; box-sizing=
+: border-box; outline: 0px; font-size: 14px; color: rgb(26, 116, 102); bord=
+er: 0px; text-decoration: none; background-color: rgb(255, 255, 255);" targ=
+et=3D"_blank">=C2=A9 2026 PGE Polska Grupa Energetyczna S.A. Wszystkie praw=
+a zastrze=C5=BCone</a></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
